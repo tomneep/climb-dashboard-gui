@@ -1,9 +1,19 @@
+function getRandomInt(max) {
+  return Math.floor(Math.random() * max);
+}
+
 export async function userInfoHandler() {
   return { user: "USER", group: "CLIMB" };
 }
 
 export async function resourcesHandler() {
-  return { cpus: "2", cpu_now: "5", cpu_max: "100" , memory_now: "1", memory_max : "100" };
+  return {
+    cpus: "2",
+    cpu_now: getRandomInt(100),
+    cpu_max: "100",
+    memory_now: getRandomInt(100),
+    memory_max : "100"
+  };
 }
 
 export async function volumesHandler() {
