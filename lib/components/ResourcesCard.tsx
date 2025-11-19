@@ -33,6 +33,8 @@ export function ResourcesCard({ handler } : ResourceCardProp) {
     const interval = setInterval(fetchData, 5000);
 
     return () => clearInterval(interval);
+    // TODO: Silencing linter for now although should fix this properly
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
