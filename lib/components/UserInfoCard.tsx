@@ -1,12 +1,21 @@
 import { BaseCard } from "./Card";
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 
-export function UserInfoCard({ handler }) {
-  const [userInfo, setUserInfo] = useState(null); // initially empty
+export interface UserInfo {
+  user: string;
+  group: string;
+}
+
+interface UserInfoCardProp {
+  handler: () => Promise<UserInfo>;
+}
+
+export function UserInfoCard({ handler }: UserInfoCardProp) {
+  const [userInfo, setUserInfo] = useState<UserInfo | null>(null); // initially empty
 
   // You could also have loading/error states if you like
   const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
+  const [error, setError] = useState<unknown | null>(null);
 
   useEffect(() => {
     async function fetchUser() {
@@ -33,9 +42,9 @@ export function UserInfoCard({ handler }) {
     <BaseCard title="User Information">
       <dl>
         <dt>User</dt>
-        <dd>{userInfo.user}</dd>
+        <dd>{userInfo?.user}</dd>
         <dt>Group</dt>
-        <dd>{userInfo.group}</dd>
+        <dd>{userInfo?.group}</dd>
       </dl>
     </BaseCard>
   );

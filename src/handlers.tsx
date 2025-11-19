@@ -6,13 +6,13 @@ export async function userInfoHandler() {
   return { user: "USER", group: "CLIMB" };
 }
 
-export async function resourcesHandler() {
+export async function resourcesHandler(): ResourceStats {
   return {
-    cpus: "2",
+    cpus: 2,
     cpu_now: getRandomInt(100),
-    cpu_max: "100",
+    cpu_max: 100,
     memory_now: getRandomInt(100),
-    memory_max : "100"
+    memory_max : 100
   };
 }
 

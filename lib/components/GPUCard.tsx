@@ -1,6 +1,10 @@
-import { BaseCard } from "./Card";
+// import { BaseCard } from "./Card";
 // import React, { useState, useEffect } from 'react';
 
-export function GPUCard({ handler }) {
-  return <BaseCard title="GPU"></BaseCard>;
-}
+// interface GPUProps {
+//   handler?: () => Promise<void>;
+// }
+
+// export function GPUCard({ handler }: GPUProps) {
+//   return <BaseCard title="GPU"></BaseCard>;
+// }

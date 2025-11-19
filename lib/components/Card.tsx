@@ -1,6 +1,13 @@
+import { ReactNode } from "react";
 import Card from "react-bootstrap/Card";
 
-export function BaseCard({ title, children }) {
+
+interface BaseCardProps {
+  title: string;
+  children: ReactNode; 
+}
+
+export function BaseCard({ title, children }: BaseCardProps) {
   return (
     <Card className="p-3 m-2">
       <Card.Body>

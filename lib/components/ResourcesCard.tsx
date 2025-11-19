@@ -1,9 +1,22 @@
 import { BaseCard } from "./Card";
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import ProgressBar from "react-bootstrap/ProgressBar";
 
-export function ResourcesCard({ handler }) {
-  const [resourceInfo, setResourceInfo] = useState(null);
+export interface ResourceStats {
+  cpus: number;
+  cpu_now: number;
+  cpu_max: number;
+  memory_now: number;
+  memory_max: number;
+}
+
+interface ResourceCardProp {
+  handler: () => Promise<ResourceStats>;
+}
+
+
+export function ResourcesCard({ handler } : ResourceCardProp) {
+  const [resourceInfo, setResourceInfo] = useState<ResourceStats | null>(null);
 
   useEffect(() => {
     async function fetchData() {
