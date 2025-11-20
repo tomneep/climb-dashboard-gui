@@ -1,5 +1,5 @@
 {
-  "name": "app",
+  "name": "climb-dashboard-gui",
   "version": "0.1.0",
   "type": "module",
   "main": "dist/app.js",
