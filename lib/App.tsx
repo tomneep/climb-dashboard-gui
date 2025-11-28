@@ -8,13 +8,13 @@ import { VolumesCard, VolumeType } from "./components/VolumesCard";
 
 import "./app.css";
 
-interface MainProps {
+interface AppProps {
   userInfoHandler: () => Promise<UserInfo>;
   resourcesHandler: () => Promise<ResourceStats>;
   volumesHandler: () => Promise<VolumeType[]>;
 }
 
-function Main({ userInfoHandler, resourcesHandler, volumesHandler }: MainProps) {
+function App({ userInfoHandler, resourcesHandler, volumesHandler }: AppProps) {
   return (
     <Stack gap={2}>
       <Header />
@@ -26,4 +26,4 @@ function Main({ userInfoHandler, resourcesHandler, volumesHandler }: MainProps) 
   );
 }
 
-export default Main;
+export default App;

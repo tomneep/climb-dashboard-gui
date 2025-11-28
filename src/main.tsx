@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import Main from "../lib/App.tsx";
+import App from "../lib/App.tsx";
 import {
   userInfoHandler,
   resourcesHandler,
@@ -9,7 +9,7 @@ import {
 
 ReactDOM.render(
   <React.StrictMode>
-    <Main
+    <App
       userInfoHandler={userInfoHandler}
       resourcesHandler={resourcesHandler}
       volumesHandler={volumesHandler}
