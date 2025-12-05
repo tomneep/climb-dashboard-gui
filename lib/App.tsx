@@ -16,13 +16,15 @@ interface AppProps {
 
 function App({ userInfoHandler, resourcesHandler, volumesHandler }: AppProps) {
   return (
-    <Stack gap={2}>
-      <Header />
-      <UserInfoCard handler={userInfoHandler} />
-      <ResourcesCard handler={resourcesHandler} />
-      <VolumesCard handler={volumesHandler} />
-      {/* <GPUCard/> */}
-    </Stack>
+    <div className="climb-jupyter onyx h-100">
+      <Stack gap={2}>
+        <Header />
+        <UserInfoCard handler={userInfoHandler} />
+        <ResourcesCard handler={resourcesHandler} />
+        <VolumesCard handler={volumesHandler} />
+        {/* <GPUCard/> */}
+      </Stack>
+    </div>
   );
 }
 
