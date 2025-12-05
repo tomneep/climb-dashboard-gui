@@ -10,8 +10,8 @@ interface BaseCardProps {
 export function BaseCard({ title, children }: BaseCardProps) {
   return (
     <Card className="p-3 m-2">
+      <Card.Title>{title}</Card.Title>
       <Card.Body>
-        <Card.Title>{title}</Card.Title>
         {children}
       </Card.Body>
     </Card>
