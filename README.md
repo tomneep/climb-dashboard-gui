@@ -1,3 +1,10 @@
-# React 17 Library Template
+# CLIMB Dashboard GUI
 
-This repository provides a minimal template and CI workflows for developing React 17 components, and publishing them to NPM as a component library.
+This repository provides a React based dashboard for showing resource
+usage on the CLIMB platform. Information displayed includes:
+
++ User/group
++ Current memory usage
++ Current CPU usage
++ Disk usage
+
