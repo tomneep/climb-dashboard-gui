@@ -44,7 +44,7 @@ export function VolumesCard({ handler }: VolumesCardProp) {
           <React.Fragment key={volume.label}>
             <dt>{volume.label}</dt>
             <dd>
-              <ProgressBar now={volume.data.used} max={volume.data.total} />
+              <ProgressBar now={volume.data.used} max={volume.data.total} label={`${100. * volume.data.used  / volume.data.total}%`}/>
             </dd>
           </React.Fragment>
         ))}
