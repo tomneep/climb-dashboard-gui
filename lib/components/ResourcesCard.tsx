@@ -14,8 +14,7 @@ interface ResourceCardProp {
   handler: () => Promise<ResourceStats>;
 }
 
-
-export function ResourcesCard({ handler } : ResourceCardProp) {
+export function ResourcesCard({ handler }: ResourceCardProp) {
   const [resourceInfo, setResourceInfo] = useState<ResourceStats | null>(null);
 
   useEffect(() => {

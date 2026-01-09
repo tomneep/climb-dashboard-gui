@@ -2,13 +2,12 @@ import { BaseCard } from "./Card";
 import React, { useState, useEffect } from "react";
 import ProgressBar from "react-bootstrap/ProgressBar";
 
-
 export type VolumeType = {
   label: string;
   data: {
     used: number;
     total: number;
-  }
+  };
 };
 
 interface VolumesCardProp {
@@ -44,7 +43,11 @@ export function VolumesCard({ handler }: VolumesCardProp) {
           <React.Fragment key={volume.label}>
             <dt>{volume.label}</dt>
             <dd>
-              <ProgressBar now={volume.data.used} max={volume.data.total} label={`${100. * volume.data.used  / volume.data.total}%`}/>
+              <ProgressBar
+                now={volume.data.used}
+                max={volume.data.total}
+                label={`${(100 * volume.data.used) / volume.data.total}%`}
+              />
             </dd>
           </React.Fragment>
         ))}
