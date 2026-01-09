@@ -23,3 +23,7 @@ export async function volumesHandler() {
     { label: "Other", data: { used: 1, total: 10 } },
   ];
 }
+
+export async function gpuHandler() {
+  return { name: "GPU Name", available: true };
+}
