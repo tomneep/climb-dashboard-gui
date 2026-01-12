@@ -5,6 +5,7 @@ import {
   userInfoHandler,
   resourcesHandler,
   volumesHandler,
+  gpuHandler,
 } from "./handlers.tsx";
 
 ReactDOM.render(
@@ -13,7 +14,8 @@ ReactDOM.render(
       userInfoHandler={userInfoHandler}
       resourcesHandler={resourcesHandler}
       volumesHandler={volumesHandler}
+      gpuHandler={gpuHandler}
     />
   </React.StrictMode>,
-  document.getElementById("root")
+  document.getElementById("root"),
 );
