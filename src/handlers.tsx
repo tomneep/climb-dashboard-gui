@@ -18,7 +18,7 @@ export async function resourcesHandler() {
 
 export async function volumesHandler() {
   return [
-    { label: "~", data: { used: 1, total: 10 } },
+    { label: "~", data: { used: 3.14159, total: 10 } },
     { label: "shared", data: { used: 25, total: 50 } },
     { label: "Other", data: { used: 1, total: 10 } },
   ];

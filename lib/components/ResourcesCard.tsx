@@ -46,7 +46,7 @@ export function ResourcesCard({ handler }: ResourceCardProp) {
           <ProgressBar
             now={resourceInfo?.memory_now ?? 0}
             max={resourceInfo?.memory_max ?? 1}
-            label={`${resourceInfo?.memory_now ?? 0}%`}
+            label={`${Math.round(resourceInfo?.memory_now ?? 0)}%`}
           />
         </dd>
         <dt>CPU usage</dt>
@@ -54,7 +54,7 @@ export function ResourcesCard({ handler }: ResourceCardProp) {
           <ProgressBar
             now={resourceInfo?.cpu_now ?? 0}
             max={resourceInfo?.cpu_max ?? 1}
-            label={`${resourceInfo?.cpu_now ?? 0}%`}
+            label={`${Math.round(resourceInfo?.cpu_now ?? 0)}%`}
           />
         </dd>
       </dl>

@@ -40,8 +40,8 @@ export function GPUCard({ handler }: GPUProps) {
   return (
     <BaseCard title="GPU">
       <dl>
-        <dd>GPU</dd>
-        <dt>{gpuInfo?.name}</dt>
+        <dt>GPU</dt>
+        <dd>{gpuInfo?.name}</dd>
       </dl>
     </BaseCard>
   );
