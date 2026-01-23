@@ -1,3 +1,10 @@
+/**
+ * Controls the navbar on the dashboard.
+ *
+ * Currently contains the name of the dashboard (the Brand) and links
+ * to various useful places (docs, support, Bryn).
+ **/
+
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";

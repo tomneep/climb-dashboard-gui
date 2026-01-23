@@ -1,3 +1,7 @@
+/**
+ * Display information about CPU and memory usage.
+ **/
+
 import { BaseCard } from "./Card";
 import { useState, useEffect } from "react";
 import ProgressBar from "react-bootstrap/ProgressBar";

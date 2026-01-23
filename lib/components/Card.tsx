@@ -1,3 +1,10 @@
+/**
+ * A base class for showing information in a react-bootstrap Card.
+ *
+ * Used to set properties of cards that are consistent across all
+ * cards.
+ **/
+
 import { ReactNode } from "react";
 import Card from "react-bootstrap/Card";
 

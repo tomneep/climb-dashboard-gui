@@ -1,3 +1,9 @@
+/**
+ * Display information about whether a GPU is available.
+ *
+ * Should only be displayed in the case that there is a GPU.
+ **/
+
 import { BaseCard } from "./Card";
 import { useState, useEffect } from "react";
 

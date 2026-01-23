@@ -1,3 +1,7 @@
+/**
+ * Display information about user (username and group).
+ **/
+
 import { BaseCard } from "./Card";
 import { useState, useEffect } from "react";
 

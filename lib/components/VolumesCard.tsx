@@ -1,3 +1,7 @@
+/**
+ * Display information about disk usage.
+ **/
+
 import { BaseCard } from "./Card";
 import React, { useState, useEffect } from "react";
 import ProgressBar from "react-bootstrap/ProgressBar";
