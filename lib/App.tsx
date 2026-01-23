@@ -39,7 +39,7 @@ function App({
   }, [gpuHandler]);
 
   return (
-    <div className="climb-jupyter onyx h-100">
+    <div className="climb-jupyter h-100">
       <Stack gap={2}>
         <Header />
         <UserInfoCard handler={userInfoHandler} />
