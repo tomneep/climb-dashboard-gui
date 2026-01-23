@@ -23,6 +23,9 @@ function App({
   volumesHandler,
   gpuHandler,
 }: AppProps) {
+  // We do not want to show the GPU card if a GPU is not
+  // available. Therefore, first check and then only add to the stack
+  // if present.
   const [hasGPU, setHasGPU] = useState<boolean | null>(null);
 
   useEffect(() => {
